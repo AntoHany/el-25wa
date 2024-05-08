@@ -47,3 +47,71 @@ header ul li a{
 header ul a:hover{
   color: #303030;
 }  
+.burger-btn{
+  background-color: transparent;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: none;
+}
+.burger-btn span{
+  background-color: black;
+  position: absolute;
+  display: block;
+  border-radius: 2px;
+  width: 100%;
+  height: 3px;
+  top: 0;
+  transition: .3s;
+}
+.burger-btn span:nth-child(2){
+  top: calc(50% - 3px);
+  transform: translateY(50%);
+}
+.burger-btn span:last-child{
+  top: calc(100% - 3px);
+}
+
+.burger-btn.active span{
+  top: calc(50% - 3px);
+  transform: translateY(50%);
+  rotate: 130deg;
+  background-color: red;
+}
+.burger-btn.active span:last-child{
+  rotate: 45deg;
+}
+.burger-btn.active span:nth-child(2){
+  display: none;
+}
+
+
+/* Start Responsive Code...  */
+@media (max-width: 991px) {
+  .burger-btn{
+    display: block;
+  }
+  header ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: calc(100% );
+    left: 0;
+    background-color: #abdff6;
+  }
+  header ul li{
+    margin: 7px;
+  }  
+  header ul li a{
+    color: #777;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+  }
+  header ul a:hover{
+    color: #303030;
+    padding-right: 5px;
+  } 
+}
