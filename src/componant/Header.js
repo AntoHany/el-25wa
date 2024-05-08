@@ -2,12 +2,13 @@ import { useContext } from "react";
 import {logoText, navLinks} from "../context/context"
 
 import './Header.css'
+import { Link } from "react-router-dom";
 
 function Logo(){
   const logo = useContext(logoText);
   return(
     <h2>
-      {logo}
+      <Link to={'/'}>{logo}</Link>
     </h2>
   )
 }
