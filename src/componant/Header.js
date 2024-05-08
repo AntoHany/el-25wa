@@ -30,7 +30,7 @@ function NavLink(){
 function BurgerButton(){
   function handleClickBB(e){
     let navLinks = document.getElementById('navLink');
-    navLinks.style.display == 'block'? navLinks.style.display = 'none': navLinks.style.display = 'block'
+    navLinks.style.display == 'block'? navLinks.style.display = 'none': navLinks.style.display = 'block';
     e.target.classList.toggle("active");
   }
   return(
