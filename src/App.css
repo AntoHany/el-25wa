@@ -1,6 +1,5 @@
 /* START GLOBAL RULES */
-*
-{
+*{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -53,10 +52,10 @@ ul
 /* END GLOBAL RULES */
 
 
-sub-text-color{
+.sub-text-color{
   color: white;
 }
 
-sub-background-color{
+.sub-background-color{
   background-color: #0378e2;
 }

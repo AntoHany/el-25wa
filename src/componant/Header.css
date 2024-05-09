@@ -93,6 +93,7 @@ header ul a:hover{
     display: block;
   }
   header ul{
+    z-index: 100;
     display: none;
     width: 100%;
     position: absolute;
