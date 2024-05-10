@@ -26,7 +26,7 @@ function Slider(){
 
   let image = ImageData[index];
   return(
-    <div className='image'>
+    <div className='slider image'>
       <img id={image.id}
         alt={image.type} 
         src={require(`../images/${image.url}`)}

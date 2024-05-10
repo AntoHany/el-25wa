@@ -1,0 +1,27 @@
+.Error{
+  padding: 40px;
+  position: relative;
+  height: 100vb;
+}
+.Error h3 a{
+  margin-right: 7px;
+  color: red;
+  text-decoration: none;
+  border-bottom: 2px solid ;
+}
+.Error span{
+  text-transform: uppercase;
+  color: rgb(1, 1, 1);
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  font-size: 100px;
+}
+.Error span i{
+  color: red;
+}  

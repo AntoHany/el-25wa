@@ -1,7 +1,7 @@
 import './Text.css'
 function Text(){
   return(
-    <div className='text'>  
+    <div className='text container'>  
       <h3>
         الأخوة لأعمال الألوميتال :
       </h3>
