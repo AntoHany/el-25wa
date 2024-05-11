@@ -1,0 +1,33 @@
+.member-section{
+position: relative;
+}
+.member-section h3{
+  margin: 50px 0;
+}
+.member-section .member {
+  margin: 30px 0;
+}
+.member-section .member .image{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 0 6px black, -2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.member-section .member img{
+  border-radius: 15px;
+  width: 100%;
+  
+}
+.member-section .member p{
+  padding: 7px;
+  font-weight: 500;
+}
+.member-section .member a{
+  padding: 7px;
+} 
+.member-section .member a:first-of-type i {
+  color: blue;
+}
+.member-section .member a:last-of-type i {
+  color: #fc0556;
+}

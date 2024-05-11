@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 
 import "./App.css"
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 

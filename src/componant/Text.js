@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Text.css'
 function Text(){
   return(
@@ -13,6 +14,7 @@ function Text(){
         <li>شيش حصيرة و سلك بليسية </li>  
       </span>
         نقدم لكم ارقى التصاميم باجود الخامات
+        لرؤيه الاعمال <Link to={'/work'}>اضغط هنا</Link>
     </div>
   )
 }
