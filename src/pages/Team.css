@@ -5,7 +5,7 @@ position: relative;
   margin: 50px 0;
 }
 .member-section .member {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 .member-section .member .image{
   width: 200px;
@@ -23,11 +23,14 @@ position: relative;
   font-weight: 500;
 }
 .member-section .member a{
-  padding: 7px;
+  padding: 10px;
 } 
 .member-section .member a:first-of-type i {
   color: blue;
 }
-.member-section .member a:last-of-type i {
+.member-section .member a:nth-of-type(2) i {
   color: #fc0556;
+}
+.member-section .member a:last-of-type i {
+  color: #3ce100;
 }

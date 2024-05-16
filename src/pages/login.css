@@ -1,0 +1,48 @@
+.login{
+  margin-top: 50px ;
+}
+.login form{
+  width: calc(100% - 200px);
+}
+.login form input{
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  margin: 20px 0;
+  padding: 7px;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border: 1px solid #abdff6;
+  font-size: 20px;
+  font-weight: 600;
+}
+.login form div{
+  position: relative;
+}
+.login form .eye{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+}
+.login form button{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #abdff6;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #777;
+}
+.login form button:hover{
+  background-color: #81d1f4;
+}
+.login form p{
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}

@@ -21,6 +21,7 @@ function Member({team}){
       <p>الاسم: {ele.name}</p>
       <a target="_blank" href={ele.faceLink}><i class="fa-brands fa-facebook"></i></a>
       <a target="_blank" href={ele.instaLink}><i class="fa-brands fa-instagram"></i></a>
+      <a target="_blank" href={`https://wa.me/${ele.whatsappLink}`}><i class="fa-brands fa-whatsapp"></i></a>
     </div>
   ))
 
