@@ -1,0 +1,41 @@
+.admin .add-project{
+  margin: 20px;
+}
+.admin .add-project h3{
+  margin-bottom: 20px;
+}
+.admin .add-project{
+  padding: 10px;
+  border: 1px solid #81d1f4;
+  border-radius: 6px;
+  box-shadow: 0 0 5px black;
+  background-color: transparent;
+}
+.admin .add-project form label{
+  display: block;
+  margin: 5px 0;
+}
+.admin .add-project form label:first-child input{
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #81d1f4;
+  border-radius: 6px;
+  margin: 10px;
+  padding: 5px;
+  outline: none;
+}
+.admin .add-project form button{
+  width: 20%;
+  margin-top: 5px;
+  background-color: #abdff6;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+}
+.admin .add-project form button:hover{
+  background-color: #82d4f7;
+}
+.admin .add-project p{
+  color: red;
+}

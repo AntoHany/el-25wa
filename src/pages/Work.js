@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../componant/Header";
-import { ImageData } from "../context/context";
 import './Work.css'
 
 function WorkNavLink({handleClickNav, activeLink}){
@@ -22,11 +21,29 @@ function WorkNavLink({handleClickNav, activeLink}){
 
 function Galary({activeLink}){
   
+  const [project, setProject] = useState([])
+
+  const url = 'http://localhost:5000/get/projects';
+  const getProjects = async () => {
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      setProject(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
+  useEffect(() => {
+    getProjects();
+  }, [])
+  
+  
   function createImages(filterImages){
     let images = filterImages.map((ele) => (
     <div key={ele.id}>
       <div className="image">
-        <img alt={ele.type} src={require(`../images/${ele.url}`)}/>
+        <img alt={ele.type} src={ele.image}/>
       </div>
       <p>{ele.title}</p>
     </div>
@@ -36,12 +53,12 @@ function Galary({activeLink}){
 
   let images;
   if (activeLink !== 'all'){
-    let filterImages = ImageData.filter((ele) => {
+    let filterImages = project.filter((ele) => {
       return ele.type === activeLink;
     });
     images = createImages(filterImages);
   }else {
-    images = createImages(ImageData);
+    images = createImages(project);
   } 
 
   return(

@@ -1,8 +1,6 @@
 import { ImageData } from '../context/context'
 import { useState } from 'react';
-
 import './Slider.css'
-
 
 function Slider(){
 

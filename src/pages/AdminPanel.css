@@ -1,0 +1,5 @@
+.admin h2{
+  margin: 20px;
+  text-transform: capitalize;
+  direction: ltr;
+}

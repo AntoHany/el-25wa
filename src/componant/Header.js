@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import {logoText, navLinks} from "../context/context"
-
 import './Header.css'
 import { Link } from "react-router-dom";
 

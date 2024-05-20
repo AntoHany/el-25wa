@@ -2,9 +2,8 @@ import bcrypt from "bcryptjs" ;
 
 function CheckDataIsValid({name, password}){
 
-  // elekwoa
   const hashName = '$2a$10$zZhulo0CAiqHjy0ucwKZW.7JUqLie98JZIHY.FD7xcUvqmskbuL4i';
-  // elekwoa-h&m-1234$$
+  
   const hashPass = '$2a$10$A/T9ogqKZEeJEu/wWlsYCOt.lD51NNC8REhN9Kj/0Xq5/wqASwKxm';
 
   let compareName = bcrypt.compareSync(name, hashName);

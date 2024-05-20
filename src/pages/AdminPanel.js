@@ -1,24 +1,15 @@
-
-function AddProject(){
-  return(
-    <div className="add-project">
-      <form>
-        <input type="text" placeholder="title" required /> 
-        <input type="file" required /> 
-        <input id="" type="" placeholder="" required /> 
-        <input value="ارسل"/> 
-      </form>
-    </div>
-  )
-}
+import AddProject from './AddProject';
+import DeleteProject from './DeleteProject';
+import './AdminPanel.css'
 
 function AdminPanel(){
   return (
-    <div className="admin">
+    <div className="admin container">
       <h2> 
-        hi admin
+        hi admin :
       </h2>
       <AddProject />
+      <DeleteProject />
     </div>
   )
 }

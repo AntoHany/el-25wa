@@ -86,7 +86,6 @@ header ul a:hover{
   display: none;
 }
 
-
 /* Start Responsive Code...  */
 @media (max-width: 991px) {
   .burger-btn{

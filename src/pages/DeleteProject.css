@@ -1,0 +1,43 @@
+.admin .delete h2 {
+  margin: 20px;
+  text-transform: capitalize;
+  direction: rtl;
+}
+.admin .delete{
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #81d1f4;
+  border-radius: 6px;
+  box-shadow: 0 0 5px black;
+  background-color: transparent;
+}
+.admin .delete form label{
+  margin: 10px;
+  cursor: pointer;
+}
+.admin .delete form label div{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.admin .delete form label input{
+  margin-left: 5px;
+  cursor: pointer;
+}
+.admin .delete form label img{
+  width: 100px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.admin .delete form button{
+  width: 20%;
+  margin: 10px 0;
+  background-color: #abdff6;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+}
+.admin .delete form button:hover{
+  background-color: #82d4f7;
+}
