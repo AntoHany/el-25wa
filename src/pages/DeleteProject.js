@@ -22,7 +22,7 @@ function DeleteProject(){
   
   async function handleSubmit(e){
     e.preventDefault();
-    const Url = "http://localhost:5000/post/deleteprojects";
+    const Url = "https://elekwoa.onrender.com/post/deleteprojects";
     try {
       await axios.post(Url, listOfProjects.current);
       document.getElementById('message').textContent = 'Data Sent Successfully';
@@ -34,7 +34,7 @@ function DeleteProject(){
   
   const [project, setProject] = useState([])
 
-  const url = 'http://localhost:5000/get/projects';
+  const url = 'https://elekwoa.onrender.com/get/projects';
   const getProjects = async () => {
     try {
       const response = await fetch(url);
@@ -55,7 +55,7 @@ function DeleteProject(){
           <input id={ele.id} type="checkbox" onChange={handlecheck}/>
           <p>{ele.title}</p>
         </div>
-        <img alt={`${ele.type} image`} src={ele.image}/>
+        <img src={ele.image}/>
       </label>
       <hr/>
     </>

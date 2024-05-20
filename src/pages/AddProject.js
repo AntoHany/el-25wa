@@ -23,7 +23,7 @@ function AddProject() {
   async function handleSubmit(e){
     e.preventDefault();
 
-    const Url = "http://localhost:5000";
+    const Url = "https://elekwoa.onrender.com";
 
     const newProject = {
       title: title.current.value,

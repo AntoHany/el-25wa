@@ -23,7 +23,7 @@ function Galary({activeLink}){
   
   const [project, setProject] = useState([])
 
-  const url = 'http://localhost:5000/get/projects';
+  const url = 'https://elekwoa.onrender.com/get/projects';
   const getProjects = async () => {
     try {
       const response = await fetch(url);
