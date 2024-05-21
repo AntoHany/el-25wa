@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import './AddProject.css'
 
-function AddProject() {
+function AddProject({handelUpdate}) {
 
   const form = useRef();
   const title = useRef();
@@ -39,6 +39,7 @@ function AddProject() {
     finally {
       form.current.reset();
     }
+    handelUpdate();
   }
 
   return (

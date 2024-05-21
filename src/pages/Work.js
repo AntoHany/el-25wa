@@ -38,6 +38,16 @@ function Galary({activeLink}){
     getProjects();
   }, [])
   
+  if(project){
+    return (
+      <h3 style={{
+        margin: "20px",
+        fontWeight: "bold",
+      }}>
+        لا يتوافر مشاريع حتي الان
+      </h3>
+    )
+  }
   
   function createImages(filterImages){
     let images = filterImages.map((ele) => (

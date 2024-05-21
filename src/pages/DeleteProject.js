@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import "./DeleteProject.css"
 
-function DeleteProject(){
+function DeleteProject({update}){
 
   const form = useRef();
   const listOfProjects = useRef([]);
@@ -25,11 +25,11 @@ function DeleteProject(){
     const Url = "https://elekwoa.onrender.com/post/deleteprojects";
     try {
       await axios.post(Url, listOfProjects.current);
-      document.getElementById('message').textContent = 'Data Sent Successfully';
+      document.getElementById('message').textContent = 'تم الحذف بنجاح';
     } catch (error){
-      document.getElementById('message').textContent = `You Have An Error At Sending Data: ${error}`;
+      document.getElementById('message').textContent = `لم يتم الحذف: ${error}`;
     }
-    window.location.reload();  
+    getProjects();
   }
   
   const [project, setProject] = useState([])
@@ -47,6 +47,11 @@ function DeleteProject(){
   useEffect(() => {
     getProjects();
   }, [])
+  
+  if(update){
+    getProjects();
+  }
+
   // id title type image
   let deleteProject = project.map((ele) => (
     <>
