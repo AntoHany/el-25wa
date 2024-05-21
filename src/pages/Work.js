@@ -38,7 +38,7 @@ function Galary({activeLink}){
     getProjects();
   }, [])
   
-  if(project){
+  if(!project){
     return (
       <h3 style={{
         margin: "20px",
