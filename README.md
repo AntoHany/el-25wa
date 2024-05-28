@@ -2,6 +2,8 @@
 
 ![elewoa image](./src/images/elekwoa.jpg)
 
+[Take A Look](https://elekwoa.vercel.app/) 
+---
 ### A project I created for a man who owns an aluminum workshop
 
 - The goal of the project is to display this man’s work as a photo gallery
